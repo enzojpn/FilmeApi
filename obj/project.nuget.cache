@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bqjb3TGWy+ghVcND2a+eOymNxe8l2Pf95uv622mi+hpfjwNRb/QWrXHikwrTb1u3vTxIm72rVV20SU9XGuEdzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\dotNet5\\FilmesApi\\FilmesApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
