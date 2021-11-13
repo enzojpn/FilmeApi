@@ -6389,24 +6389,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\": {}
+    "C:\\Users\\enzo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\dotNet5\\FilmesApi\\FilmesApi.csproj",
+      "projectUniqueName": "C:\\Users\\enzo\\Documents\\dotnetcoreProjects\\FilmeApi\\FilmesApi.csproj",
       "projectName": "FilmesApi",
-      "projectPath": "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\dotNet5\\FilmesApi\\FilmesApi.csproj",
-      "packagesPath": "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\dotNet5\\FilmesApi\\obj\\",
+      "projectPath": "C:\\Users\\enzo\\Documents\\dotnetcoreProjects\\FilmeApi\\FilmesApi.csproj",
+      "packagesPath": "C:\\Users\\enzo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\enzo\\Documents\\dotnetcoreProjects\\FilmeApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ktaPC.DESKTOP-F3KLRMC\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\enzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6462,7 +6464,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
