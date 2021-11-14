@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
+using FilmeApi.Data.Dtos;
 using FilmesApi.Data;
 using FilmesApi.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -13,9 +15,12 @@ namespace FilmesApi.Controllers
     {
         private FilmeContext _context;
 
-        public FilmeController(FilmeContext context)
+        private IMapper _mapper;
+
+        public FilmeController(FilmeContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -30,14 +35,17 @@ namespace FilmesApi.Controllers
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme != null)
             {
-                return Ok(filme);
+                ReadFilmeDto filmeDto = _mapper.Map<ReadFilmeDto>(filme);
+                filmeDto.HoraConsulta = DateTime.Now;
+                return Ok(filmeDto);
             }
             return NotFound();
         }
 
         [HttpPost]
-        public IActionResult adiciona([FromBody] Filme filme)
+        public IActionResult adiciona([FromBody] CreateFilmeDto filmeDto)
         {
+            Filme filme = _mapper.Map<Filme>(filmeDto);
 
             _context.Filmes.Add(filme);
             _context.SaveChanges();
@@ -45,17 +53,14 @@ namespace FilmesApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult altera(int id, [FromBody] Filme filmeNovo)
+        public IActionResult altera(int id, [FromBody] UpdateFilmeDto filmeDto)
         {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme == null)
             {
                 return null;
             }
-            filme.Diretor = filmeNovo.Diretor;
-            filme.Duracao = filmeNovo.Duracao;
-            filme.Genero = filmeNovo.Genero;
-            filme.Titulo = filmeNovo.Titulo;
+            _mapper.Map(filmeDto, filme);
             _context.SaveChanges();
             return NoContent();
         }

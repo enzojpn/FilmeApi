@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E/g7CS4bqzABwYqud670CZ1s4kGwT6r1XqCfnHqSwsiQH7xdDSCgXNxVXlezZGotNiRbYxgrOXURBBf9andm2w==",
+  "dgSpecHash": "A+aPEJvPhoXDiaGGaZrC4Y+iqpq51gvIB7JDRqsq+8iJWqn/iF9FBOQA26EzZ5NLBELCCvISyROMTASjprKlhw==",
   "success": true,
   "projectFilePath": "C:\\Users\\enzo\\Documents\\dotnetcoreProjects\\FilmeApi\\FilmesApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\enzo\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\enzo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
@@ -79,7 +81,7 @@
     "C:\\Users\\enzo\\.nuget\\packages\\system.net.sockets\\4.1.0\\system.net.sockets.4.1.0.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\enzo\\.nuget\\packages\\system.reflection.emit\\4.0.1\\system.reflection.emit.4.0.1.nupkg.sha512",
+    "C:\\Users\\enzo\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.0.1\\system.reflection.emit.ilgeneration.4.0.1.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\system.reflection.emit.lightweight\\4.0.1\\system.reflection.emit.lightweight.4.0.1.nupkg.sha512",
     "C:\\Users\\enzo\\.nuget\\packages\\system.reflection.extensions\\4.0.1\\system.reflection.extensions.4.0.1.nupkg.sha512",
