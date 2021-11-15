@@ -17,6 +17,10 @@
 mono_crash.*
 
 # Build results
+#
+#
+Debug
+obj
 [Dd]ebug/
 [Oo]bj/[Dd]ebug
 [Dd]ebugPublic/
