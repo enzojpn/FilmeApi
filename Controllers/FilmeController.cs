@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 using FilmeApi.Data.Dtos;
-using FilmesApi.Data;
-using FilmesApi.Models;
+using FilmeApi.Data;
+using FilmeApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilmesApi.Controllers
