@@ -34,13 +34,13 @@ namespace FilmeApi.Controllers
 
         [HttpGet]
         public IEnumerable<Endereco> listar(){
-            return _context.Endereco;
+            return _context.Enderecos;
         }
 
         [HttpGet("{id}")]
         public IActionResult buscar(int id){
 
-            Endereco endereco = _context.Endereco.FirstOrDefault(endereco => endereco.Id == id);
+            Endereco endereco = _context.Enderecos.FirstOrDefault(endereco => endereco.Id == id);
             if (endereco == null){
 
             return NotFound();
