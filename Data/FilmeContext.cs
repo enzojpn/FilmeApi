@@ -20,7 +20,8 @@ namespace FilmeApi.Data
             builder.Entity<Cinema>()
             .HasOne(cinema => cinema.Gerente)
             .WithMany(gerente => gerente.Cinemas)
-            .HasForeignKey(cinema => cinema.Id);
+            .HasForeignKey(cinema => cinema.GerenteId);
+ 
         }
 
         public DbSet<Filme> Filmes { get; set; }
