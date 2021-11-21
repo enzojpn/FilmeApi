@@ -43,12 +43,14 @@ namespace FilmeApi.Controllers
         {
 
             Cinema cinema = _context.Cinemas.FirstOrDefault(cinema => cinema.Id == id);
-            if (cinema == null)
+            if (cinema != null)
             {
-                return NotFound();
+                ReadCinemaDto cinemaDto = _mapper.Map<ReadCinemaDto>(cinema);
+                cinemaDto.HoraConsulta = System.DateTime.Now;
+                return Ok(cinemaDto);
             }
 
-            return Ok(cinema);
+            return NotFound();
         }
 
     }

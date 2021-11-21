@@ -15,7 +15,7 @@ namespace FilmeApi.Models
 
         public int Numero { get; set; }
 
-[JsonIgnore]
+        [JsonIgnore]
         public virtual Cinema Cinema { get; set; }
 
     }

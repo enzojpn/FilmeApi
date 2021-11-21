@@ -10,7 +10,7 @@ namespace FilmeApi.Profiles
         {
             CreateMap<CreateCinemaDto, Cinema>();
             CreateMap<UpdateCinemaDto, Cinema>();
-            CreateMap<Cinema, ReadFilmeDto>();
+            CreateMap<Cinema, ReadCinemaDto>();
         }
     }
 }

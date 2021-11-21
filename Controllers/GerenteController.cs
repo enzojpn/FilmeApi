@@ -4,6 +4,7 @@ using FilmeApi.Models;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using FilmeApi.Data.Dtos;
+using System;
 
 namespace FilmeApi.Controllers
 {
@@ -27,12 +28,14 @@ namespace FilmeApi.Controllers
         public IActionResult buscar(int id)
         {
             Gerente gerente = _context.Gerentes.FirstOrDefault(gerente => gerente.Id == id);
-            if (gerente == null)
+            if (gerente != null)
             {
-                return NotFound();
+                ReadGerenteDto gerenteDto = _mapper.Map<ReadGerenteDto>(gerente);
+                gerenteDto.HoraDaConsulta = DateTime.Now;
+                return Ok(gerenteDto);
             }
 
-            return Ok(gerente);
+            return NotFound();
         }
 
         [HttpPost]
