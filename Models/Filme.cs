@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace FilmeApi.Models
 {
@@ -16,5 +18,8 @@ namespace FilmeApi.Models
         public string Genero { get; set; }
         [Range(1, 600)]
         public int Duracao { get; set; }
+
+    [JsonIgnore]
+        public virtual List<Sessao> Sessoes { get; set; }
     }
 }
