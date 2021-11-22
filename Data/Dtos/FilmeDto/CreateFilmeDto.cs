@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FilmeApi.Data.Dtos
 {
-    public class UpdateFilmeDto
+    public class CreateFilmeDto
     {
         [Required(ErrorMessage = "O título é obrigatório")]
         public string Titulo { get; set; }
@@ -12,5 +12,7 @@ namespace FilmeApi.Data.Dtos
         public string Genero { get; set; }
         [Range(1, 600)]
         public int Duracao { get; set; }
+
+        public int FaixaEtaria { get; set; }
     }
 }

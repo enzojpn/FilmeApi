@@ -9,5 +9,6 @@ namespace FilmeApi.Data.Dtos.Sessao
         public Filme Filme { get; set; }
 
         public DateTime HorarioDeEncerramento { get; set; }
+        public DateTime HorarioDeInicio { get; set; }
     }
 }
