@@ -12,8 +12,7 @@ namespace FilmeApi.Data.Dtos
         public string Genero { get; set; }
         [Range(1, 600)]
         public int Duracao { get; set; }
-
-        
+ 
         public int FaixaEtaria { get; set; }
     }
 }

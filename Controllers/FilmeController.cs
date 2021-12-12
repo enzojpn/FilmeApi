@@ -24,13 +24,32 @@ namespace FilmesApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult buscar()
+        public IActionResult buscarLista([FromQuery] int? faixaEtaria = null)
         {
-            return Ok(_context.Filmes);
+            List<Filme> filmes;
+            if (faixaEtaria != null)
+            {
+                filmes = _context.Filmes.Where(filme => filme.FaixaEtaria <= faixaEtaria).ToList();
+
+            }
+            else
+            {
+                filmes = _context.Filmes.ToList();
+            }
+            if (filmes != null)
+            {
+                List<ReadFilmeDto> filmesDto = _mapper.Map<List<ReadFilmeDto>>(filmes);
+                return Ok(filmesDto);
+            }
+
+
+
+            return NotFound();
+
         }
 
         [HttpGet("{id}")]
-        public IActionResult buscar(int id)
+        public IActionResult buscarPorId(int id)
         {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme != null)
@@ -49,7 +68,7 @@ namespace FilmesApi.Controllers
 
             _context.Filmes.Add(filme);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(buscar), new { Id = filme.Id }, filme);
+            return CreatedAtAction(nameof(buscarPorId), new { Id = filme.Id }, filme);
         }
 
         [HttpPut("{id}")]
@@ -66,9 +85,11 @@ namespace FilmesApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult delete(int id){
+        public IActionResult delete(int id)
+        {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
-            if(filme == null){
+            if (filme == null)
+            {
                 return NotFound();
             }
             _context.Remove(filme);
